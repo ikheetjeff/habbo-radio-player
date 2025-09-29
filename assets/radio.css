@@ -1,0 +1,362 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,400,500,700,900";
+
+* {
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+#area_player {
+   	width: calc(100% - 200px);
+    font-family: ubuntu, sans-serif;
+    text-decoration: none;
+    color: #fff
+}
+
+#player {
+    background-color: red;
+    width: 266px;
+    float: left
+}
+
+.player_min {
+    background-image: url('./images/bg_nieuw_2.png');
+    width: 220px;
+    height: 45px;
+    position: absolute;
+    left: 55px;
+    top: -100px;
+    transition: all .5s;
+	background-repeat: no-repeat;
+}
+
+#player.minimize .player_min {
+    top: -55px;
+}
+
+.player_min .guy {
+    background-image: url(./images/guy.png);
+    width: 31px;
+    height: 30px;
+    float: left;
+    margin: 10px 8px;
+    margin-bottom: 0
+}
+
+.player_min .txt {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3)
+}
+
+.player_min .handle {
+    background-image: url(./images/handle.png);
+    width: 22px;
+    height: 17px;
+    position: absolute;
+    right: 34px;
+    top: 11px;
+    cursor: e-resize
+}
+
+.player_min .open {
+    background-image: url(./images/open.png);
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer
+}
+
+.player_min .open:hover {
+    background-position: center
+}
+
+.player_min .open:active {
+    height: 19px;
+    top: 11px;
+    background-position: bottom
+}
+
+.player {
+    background-image: url('./images/bg_nieuw3.png');
+    width: 267px;
+    height: 91px;
+    left: 55px;
+    top: -55px;
+    position: absolute;
+    float: left;
+    transition: all .5s;
+}
+
+#player.minimize .player {
+    top: -146px;
+}
+
+.player .chair {
+    background-image: url('./images/chair.png');
+    width: 33px;
+    height: 25px;
+    margin-left: 19px;
+    margin-top: 41px;
+    float: left;
+    position: relative
+}
+
+.player .chair:before {
+    content: "";
+    background-image: url('./images/chair_2.png');
+    width: 33px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.player .chair .habbo {
+    width: 33px;
+    height: 56px;
+    margin-left: 3px
+}
+
+.player .chair .cabeca {
+    width: 54px;
+    height: 62px;
+    margin-top: -45px;
+    margin-left: -10px;
+    margin-bottom: -46px;
+    position: relative;
+    z-index: 2
+}
+
+.player .btn69 {
+    background-image: url('./images/buttonnew.png');
+    width: 60px;
+    height: 40px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 7px
+}
+
+.player .btn69 .play {
+    background-image: url('./images/play_pause.png');
+    background-position: left top;
+    width: 20px;
+    height: 30px;
+    float: left;
+    margin-left: 19px;
+    margin-top: 5px
+}
+
+.player .btn69 .play:hover {
+    background-position: left bottom
+}
+
+.player .btn69 .pause {
+    background-image: url('./images/play_pause.png');
+    background-position: right top;
+    width: 22px;
+    height: 30px;
+    float: left;
+    margin-left: 19px;
+    margin-top: 5px
+}
+
+.player .btn69 .pause:hover {
+    background-position: right bottom
+}
+
+.player .btn2 {
+    background-image: url('./images/button4.png');
+    width: 28px;
+    height: 27px;
+    float: left;
+    margin-left: 0;
+    margin-top: 10px
+}
+
+.player .btn2 .min {
+    background-image: url('./images/min3.png');
+    background-position: left top;
+    width: 22px;
+    height: 10px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 9px
+}
+
+.player .btn2 .min:hover {
+    background-position: left bottom
+}
+
+.player .btn3 {
+    background-image: url('./images/button4.png');
+    width: 28px;
+    height: 27px;
+    float: right;
+    margin-right: 0;
+    margin-top: 10px
+}
+
+.player .btn3 .plus {
+    background-image: url('./images/plus3.png');
+    background-position: right top;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px
+}
+
+.player .btn3 .plus:hover {
+    background-position: right bottom
+}
+
+.player .separa {
+    background-color: #bbb;
+    width: 1px;
+    height: 52px;
+    float: left;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 12px;
+    opacity: .4
+}
+
+.player .info {
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    width: 100px;
+    padding-left: 24px;
+    height: 19px;
+    line-height: 19px;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-top: 4px
+}
+
+.player .music {
+    background-image: url(./images/music.png);
+    margin-top: 10px
+}
+
+.player .dj {
+    background-image: url(./images/dj.png)
+}
+
+.player .room {
+    background-image: url(./images/room.png);
+    background-position: left center
+}
+
+.player .listeners {
+    background-image: url(./images/listeners.png)
+}
+
+.player .handle {
+    background-image: url(./images/handle.png);
+    width: 22px;
+    height: 17px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    cursor: e-resize
+}
+
+.player .rooster {
+    background-image: url('./images/icon_stalk.png');
+    width: 13px;
+    height: 17px;
+    position: absolute;
+    right: 16px;
+    bottom: 36px
+}
+
+.player .closee {
+    background-image: url('./images/close.png');
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer
+}
+
+.close2 {
+	background-image: url('./images/close.png');
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    right: -184px;
+    top: -56px;
+    cursor: pointer;
+}
+
+.close2:hover {
+    background-image: url('./images/close.png');
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    right: -184px;
+    top: -56px;
+    cursor: pointer;
+}
+
+.close2:hover {
+    background-position: center
+}
+
+.close2:active {
+    height: 19px;
+    top: -56px;
+    background-position: bottom
+}
+
+.player .closee:hover {
+    background-position: center
+}
+
+.player .closee:active {
+    height: 19px;
+    top: 11px;
+    background-position: bottom
+}
+
+.player .verzoeklijn {
+    width: 50px;
+    height: 17px;
+    position: absolute;
+    right: 89px;
+    bottom: 1px;
+    font-size: x-small;
+    color: #fff
+}
+
+.player .roosterlijn {
+    width: 36px;
+    height: 17px;
+    position: absolute;
+    right: 37px;
+    bottom: 1px;
+    font-size: x-small;
+    color: #fff
+}
+
+.quick-buy-close {
+	background-image: url('./images/close2.png');
+    background-position: 0 0;
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Player</title>
+    <link rel="stylesheet" type="text/css" href="./assets/radio.css?version=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js" integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc=" crossorigin="anonymous"></script>
+    <script src="./assets/radio.js"></script>
+</head>
+<body>
+
+<div id="area_player">
+    <audio style="display: none" id="radio_player" controls></audio>
+    <div id="player" class="db ui-widget-content ui-draggable" style="left: 370px; position: relative; top: 47px;">
+        <div class="player_min">
+            <div class="guy"></div>
+            <div class="txt" style="font-family:Poppins"><b class="streamerr"></b> is live</div>
+            <div class="open o-c tip" title=""></div>
+        </div>
+
+        <div class="player">
+            <div class="btn69">
+                <a id="playerButton" data-enable="1">
+                    <div class="knop pause"></div>
+                </a>
+                <div class="btn2">
+                    <div class="min"></div>
+                </div>
+                <div class="btn3">
+                    <div class="plus"></div>
+                </div>
+
+                <div class="close o-c tip" title="Minimaliseren"></div>
+                <div class="sdverzoek">
+                    <a class="verzoeklijn tip" style="font-family:Poppins">verzoeklijn</a>
+                    <a class="roosterlijn tip" target="_blank" title="" href="/rooster" style="font-family:Poppins">rooster</a>
+                    <div class="handle"></div>
+                </div>
+            </div>
+
+            <div class="separa"></div>
+            <div id="load_radio">
+                <div class="info dj tip" title="" style="font-family:Poppins">
+                    <span id="locutorver" class="streamerr">MagicFM</span>
+                </div>
+                <div class="info listeners tip" title="" style="font-family:Poppins">
+                    <span id="papzak" class="listner">0</span>
+                </div>
+                <div class="info music tip" title="" style="width: 45%;font-family:Poppins;">
+                    <marquee scrolldelay="150" onmouseover="this.stop();" onmouseout="this.start();">
+                        <span id="musica" class="nowPlaying"></span>
+                    </marquee>
+                </div>
+            </div>
+            <div class="closee o-c tip" title="Minimaliseren"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html> 

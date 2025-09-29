@@ -1,9 +1,8 @@
-# Habbo/Retro Radio Player
-
-Een klein en simpele radioplayer die doet wat 'ie moet doen: dienen als radioplayer voor een Habbo of Retro Hotel. 
+# Habbo/Retro Radio Player voor (Nitro) Client
+Simpel en kleine radioplayer voor in een Habbo/Retro client, zoals die van Nitro. Inclusief ingebouwde API informatie van een Azuracast radiostation, welke real-time wordt opgehaald met een websocket verbinding.
 
 ![Demo GIF](images/player.gif)
 
-Deze player heeft ingebouwde support voor Azuracast Websockets, waardoor de nowplaying data vrijwel real-time wordt bijgewerkt. 
+Tbh heb ik dit niet volledig zelf gemaakt, behalve de javascript voor Azuracast websocket verbinding.
 
 Have fun
